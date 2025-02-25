@@ -8,7 +8,7 @@ function removeAds() {
       if (card == null) {
         let j = 0
         card = spans[i]
-        while (j < 6) {
+        while (j < 8) {
           card = card.parentNode
           ++j;
         }
@@ -22,4 +22,4 @@ removeAds();
 
 setInterval(function(){
   removeAds()
-}, 100)
+}, 1000)
